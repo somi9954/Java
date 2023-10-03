@@ -1,10 +1,6 @@
 
 # Java_study📖
 
-<style>
-  summary { display: block; }
-</style>
-
 <details>
   <summary><b>✔️자바의 특징</b></summary>
   <div markdown="1">
@@ -198,3 +194,11 @@
   <div markdown="1"> 
   </div>
 </details>
+
+참고자료
+-----
+https://github.com/yonggyo1125 
+
+ [도우출판/ Java의 정석 / 남궁 성](http://www.yes24.com/Product/Goods/24259565)
+
+[멘토씨리즈 자바/ 코리아교육그룹 교육연구소](https://kedustore.com/books/detail.asp?pdt_seq=1251)
