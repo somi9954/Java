@@ -79,11 +79,13 @@ static main시작된 클래스에 메서드는 없지만 private매개변수가 
 
 이러한 변경을 통해 Hello, World!를 작성할 수 있습니다. 액세스 수정자, static수정자, String[]매개변수가 없으므로 필요할 때까지 이러한 구성의 도입을 연기할 수 있습니다.
 
+```Java
 class HelloWorld { 
     void main() { 
         System.out.println("Hello, World!");
     }
 }
+```
 ### 유연한 출시 프로토콜 
 * 프로그램 진입점 선언에 더 많은 유연성을 제공하고 특히 다음과 같이 인스턴스 기본 메서드를 허용하도록 시작 프로토콜을 향상합니다.
    *  시작된 main 클래스의 메서드에 public , protected , default 등 접근 제어자의 액세스 권한을 부여한다
