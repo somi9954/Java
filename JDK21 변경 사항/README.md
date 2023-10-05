@@ -69,15 +69,15 @@ java --source 21 --enable-preview Main.java
 ![image](https://github.com/somi9954/Java/assets/137499604/f981880f-024f-4f38-997f-eb79c1b55a7e)
 
 
-프로그램 진입점 선언에 더 많은 유연성을 제공하고 특히 다음과 같이 인스턴스 기본 메서드를 허용하도록 시작 프로토콜을 향상합니다.
+* 프로그램 진입점 선언에 더 많은 유연성을 제공하고 특히 다음과 같이 인스턴스 기본 메서드를 허용하도록 시작 프로토콜을 향상합니다.
 
-main시작된 클래스의 메서드에 public, 또는 default 등 접근제어자 액세스 권한을 부여합니다.
+* main시작된 클래스의 메서드에 public, 또는 default 등 접근제어자 액세스 권한을 부여합니다.
 
-시작된 클래스에 매개변수가 있는 static main메서드가 없지만 매개변수가 없는 메서드가 String[]포함되어 있는 경우 해당 메서드(static main)를 호출합니다.
+* 시작된 클래스에 매개변수가 있는 static main메서드가 없지만 매개변수가 없는 메서드가 String[]포함되어 있는 경우 해당 메서드(static main)를 호출합니다.
 
-static main시작된 클래스에 메서드는 없지만 private매개변수가 0이 아닌 생성자(예: of public, protected또는 패키지 액세스)와 private인스턴스 가 아닌 main메서드가 있는 경우 클래스의 인스턴스를 생성합니다. 클래스에 매개 변수가 main있는 인스턴스 메소드가 있는 경우 String[]해당 메소드를 호출하십시오. main그렇지 않으면 매개변수 없이 인스턴스 메서드를 호출합니다 .
+* static main 시작된 클래스에 메서드는 없지만 private매개변수가 0이 아닌 생성자(예: of public, protected또는 패키지 액세스)와 private인스턴스 가 아닌 main메서드가 있는 경우 클래스의 인스턴스를 생성합니다. 클래스에 매개 변수가 main있는 인스턴스 메소드가 있는 경우 String[]해당 메소드를 호출하십시오. main그렇지 않으면 매개변수 없이 인스턴스 메서드를 호출합니다 .
 
-이러한 변경을 통해 Hello, World!를 작성할 수 있습니다. 액세스 수정자, static수정자, String[]매개변수가 없으므로 필요할 때까지 이러한 구성의 도입을 연기할 수 있습니다.
+* 이러한 변경을 통해 Hello, World!를 작성할 수 있습니다. 액세스 수정자, static수정자, String[]매개변수가 없으므로 필요할 때까지 이러한 구성의 도입을 연기할 수 있습니다.
 
 ```Java
 class HelloWorld { 
