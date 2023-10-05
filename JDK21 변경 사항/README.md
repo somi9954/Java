@@ -69,4 +69,46 @@ java --source 21 --enable-preview Main.java
 ![image](https://github.com/somi9954/Java/assets/137499604/f981880f-024f-4f38-997f-eb79c1b55a7e)
 
 
+프로그램 진입점 선언에 더 많은 유연성을 제공하고 특히 다음과 같이 인스턴스 기본 메서드를 허용하도록 시작 프로토콜을 향상합니다.
+
+main시작된 클래스의 메서드에 public, 또는 기본(예: 패키지) 액세스 권한을 부여합니다 protected.
+
+시작된 클래스에 매개변수가 있는 static main메서드가 없지만 매개변수가 없는 메서드가 String[]포함되어 있는 경우 해당 메서드를 호출합니다.static main
+
+static main시작된 클래스에 메서드는 없지만 private매개변수가 0이 아닌 생성자(예: of public, protected또는 패키지 액세스)와 private인스턴스 가 아닌 main메서드가 있는 경우 클래스의 인스턴스를 생성합니다. 클래스에 매개 변수가 main있는 인스턴스 메소드가 있는 경우 String[]해당 메소드를 호출하십시오. main그렇지 않으면 매개변수 없이 인스턴스 메서드를 호출합니다 .
+
+이러한 변경을 통해 Hello, World!를 작성할 수 있습니다. 액세스 수정자, static수정자, String[]매개변수가 없으므로 필요할 때까지 이러한 구성의 도입을 연기할 수 있습니다.
+
+class HelloWorld { 
+    void main() { 
+        System.out.println("Hello, World!");
+    }
+}
+### 유연한 출시 프로토콜 
+* 프로그램 진입점 선언에 더 많은 유연성을 제공하고 특히 다음과 같이 인스턴스 기본 메서드를 허용하도록 시작 프로토콜을 향상합니다.
+   *  시작된 main 클래스의 메서드에 public , protected , default 등 접근 제어자의 액세스 권한을 부여한다
+   *  시작된 클래스에 매개변수가 있는 static main메서드가 없지만 매개변수가 없는 메서드가 String[]포함되어 있는 경우 해당 static main 메서드를 호출합니다.
+   *  static main시작된 클래스에 메서드는 없지만 private매개변수가 0이 아닌 생성자(예: of public, protected또는 패키지 액세스)와 private인스턴스 가 아닌 main메서드가 있는 경우 클래스의 인스턴스를 생성합니다. 클래스에 매개 변수가 main있는 인스턴스 메소드가 있는 경우 String[]해당 메소드를 호출하십시오. main그렇지 않으면 매개변수 없이 인스턴스 메서드를 호출합니다 .
+* 이러한 변경을 통해 Hello, World!를 작성할 수 있습니다. 액세스 수정자, static수정자, String[]매개변수가 없으므로 필요할 때까지 이러한 구성의 도입을 연기할 수 있습니다.
+```JAVA
+class HelloWorld { 
+    void main() { 
+        System.out.println("Hello, World!");
+    }
+}
+```
+### 주요 메소드 선택
+* 클래스를 시작할 때 시작 프로토콜은 호출할 다음 메서드 중 첫 번째 메서드를 선택합니다.
+  
+   * 시작된 클래스에 선언된 static void main(String[] args) static 앞에 접근제어자를 설정한다. 
+
+   * static void main()실행된 클래스에 선언된 비공개 액세스 방법 
+
+   * void main(String[] args)시작된 클래스에서 선언되거나 슈퍼클래스에서 상속된 비공개 액세스의 인스턴스 메서드
+
+   * void main()시작된 클래스에서 선언되거나 슈퍼클래스에서 상속된 비공개 액세스의 인스턴스 메서드입니다 .
+
+* public static void main(String[] args)이는 동작의 변경 사항입니다. 시작된 클래스가 인스턴스 main을 선언하면 슈퍼클래스에서 선언 된 상속된 "전통" 메서드가 아닌 해당 메서드가 호출됩니다 . 따라서 시작된 클래스가 "전통적인" 기본 메소드를 상속하지만 다른 메소드(예: 인스턴스 main)가 선택된 경우 JVM은 런타임 시 표준 오류에 대한 경고를 발행합니다.
+
+* 선택된 메소드 main가 인스턴스 메소드이고 내부 클래스의 멤버인 경우 프로그램이 시작되지 않습니다.
 
