@@ -76,4 +76,5 @@ Collections.unmodifiableSequencedMap(sequencedMap)
 ```
 
 ----
-출처 : https://mangkyu.tistory.com/308 </br> 출처 : https://openjdk.org/jeps/431
+출처 : https://mangkyu.tistory.com/308 </br>
+출처 : https://openjdk.org/jeps/431
