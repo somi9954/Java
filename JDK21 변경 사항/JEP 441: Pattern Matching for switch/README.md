@@ -3,7 +3,7 @@
 
 * 앞선 JEP 440에서 살펴보았듯 자바는 최근 패턴 매칭 부분을 상당히 개선시키고 있는데, 이번에는 패턴 매칭을 스위치 문까지 확장시켰다.
 
-#### Instanceof 사용
+### Instanceof 사용
 * 기존의 스위치 문은 특정 타입 여부를 검사하는 것이 상당히 제한적이였기 때문에, 특정 타입인지 검사하려면 instance of에 if-else 문법을 사용해야 했다.
 
 ```JAVA
@@ -38,7 +38,7 @@ static String formatterPatternSwitch(Object obj) {
 }
 ```
 
-#### null 검사
+### null 검사
 * 기존에는 스위치 문의 파라미터가 null이라면 NPE(NullPointerException)을 던지기 때문에, null에 대한 검사가 스위치 문 외부에서 수행되어야 했다.
 
 ```JAVA
