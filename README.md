@@ -1,6 +1,7 @@
 
 # Java_study📖
-공부하려고 만든 공간입니다 피드백은 환영입니다😀​
+공부하려고 만든 공간입니다 피드백은 환영입니다😀​ 
+인텔리제이 기반으로 공부하였습니다.
 
 ## List view
   <details>
@@ -198,6 +199,32 @@
   </details>
 
 </br>
+
+
+💡 인텔리제이 단축키
+---
+
+| sout | System.out.println |
+| --- | --- |
+| soutv | System.out.println 변수명 출력 |
+| soutm | System.out.println 메서드명 출력 |
+| psvm | public static void main(String[] args) |
+| main | public static void main(String[] args) |
+| iter | for each (향상된 for문) |
+| ifn | CTRL + ALT + L |
+| CTRL + ALT + L | 자동 정렬 |
+| ctrl + d | 위의 문장과 같은 내용을 복사 |
+| ctrl + /  | 주석 // |
+| ctrl + shift + / | 주석 /* */ |
+| fori  | for(int i = 0; i < 0 ; i++; { } |
+| fore | foreach문 생성 |
+| ctrl + shift +  f10 | 코드 실행 (처음실행시) |
+| shift + f10 | 실행했던 코드를 다시 실행할 경우  |
+| alt + insert  | 생성자, getter, setter, toString 자동생성 |
+| ctrl + o | 메서드 오버라이딩  |
+| Ctrl + Alt + T | Surround With if/else, try/catch 등으로 감쌀 수 있다. |
+
+
 
   ### 참고자료
   
